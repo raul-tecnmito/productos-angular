@@ -1,0 +1,33 @@
+.mat-mdc-dialog-content {
+  min-height: 90vh;
+}
+
+.product-view-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.product-image {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+}
+
+p {
+  margin: 5px 0;
+}

@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Modal de confirmación</h2>
+<mat-dialog-content>
+  <p>¿Seguro que quieres borrar el producto?</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="closeDialog(false)">No</button>
+  <button mat-button (click)="closeDialog(true)" cdkFocusInitial>Sí</button>
+</mat-dialog-actions>

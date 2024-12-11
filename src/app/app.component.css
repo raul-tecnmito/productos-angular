@@ -1,0 +1,181 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+  }
+  
+  .login-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    padding: 20px;
+  }
+  
+  .left-side {
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 17px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15); /* Color de fondo con transparencia */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Sombra suave */
+    backdrop-filter: blur(8.5px); /* Efecto blur para el glassmorphism */
+    -webkit-backdrop-filter: blur(8.5px); /* Compatibilidad con Safari */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 30px;
+    color: #fff;
+  }
+  
+  .card-title {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los inputs y labels */
+  mat-form-field ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgba(255, 255, 255, 0.7); /* Color del borde del input */
+  }
+
+  Continuamos con el CSS, incluyendo los estilos para los inputs, labels, iconos y el botón:
+
+/* ... (CSS anterior) ... */
+
+mat-form-field ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #fff; /* Color del borde del input cuando está enfocado */
+}
+
+mat-form-field ::ng-deep .mat-input-element {
+  color: #fff; /* Color del texto del input */
+}
+
+mat-form-field ::ng-deep .mat-form-field-label {
+  color: rgba(255, 255, 255, 0.7) !important; /* Color del label */
+}
+
+mat-form-field ::ng-deep.mat-focused .mat-form-field-label {
+    color: #fff !important; /* Color del label cuando el input está enfocado */
+}
+
+/* Estilos para los iconos */
+mat-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilos para el botón */
+button[mat-raised-button] {
+  background-color: #42a5f5; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+}
+
+button[mat-raised-button]:hover {
+  background-color: #1e88e5; /* Color de fondo del botón al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+button[mat-raised-button]:disabled {
+  background-color: rgba(66, 165, 245, 0.5); /* Color de fondo del botón deshabilitado */
+  cursor: default;
+  transform: none;
+}
+
+Continuamos con el CSS, incluyendo los estilos para los inputs, labels, iconos y el botón:
+
+/* ... (CSS anterior) ... */
+
+mat-form-field ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #fff; /* Color del borde del input cuando está enfocado */
+}
+
+mat-form-field ::ng-deep .mat-input-element {
+  color: #fff; /* Color del texto del input */
+}
+
+mat-form-field ::ng-deep .mat-form-field-label {
+  color: rgba(255, 255, 255, 0.7) !important; /* Color del label */
+}
+
+mat-form-field ::ng-deep.mat-focused .mat-form-field-label {
+    color: #fff !important; /* Color del label cuando el input está enfocado */
+}
+
+/* Estilos para los iconos */
+mat-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilos para el botón */
+button[mat-raised-button] {
+  background-color: #42a5f5; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+}
+
+button[mat-raised-button]:hover {
+  background-color: #1e88e5; /* Color de fondo del botón al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+button[mat-raised-button]:disabled {
+  background-color: rgba(66, 165, 245, 0.5); /* Color de fondo del botón deshabilitado */
+  cursor: default;
+  transform: none;
+}
+
+/* Estilos para el mensaje de error */
+mat-error {
+  color: #ff5252; /* Color del mensaje de error */
+  font-size: 0.9rem;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Estilos responsivos (opcional) */
+@media (max-width: 600px) {
+  .glass-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+<mat-dialog-content>
+  <div class="titulo">
+    <h2>{{ data.nombre }}</h2>
+  </div>
+  <div class="product-view-dialog">
+    <button mat-icon-button class="close-button" (click)="close()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <img *ngIf="data.imagen_url !== ''" [src]="data.imagen_url" [alt]="data.nombre" class="product-image" />
+    <p><strong>Precio:</strong> {{ data.precio | currency }}</p>
+    <p><strong>Descripción:</strong> {{ data.descripcion }}</p>
+    <p><strong>Categoría:</strong> {{ data.categoria }}</p>
+    <p><strong>Marca:</strong> {{ data.marca }}</p>
+    <p><strong>Stock:</strong> {{ data.stock }}</p>
+  </div>
+</mat-dialog-content>
