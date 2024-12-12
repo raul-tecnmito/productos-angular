@@ -1,0 +1,38 @@
+<div style="background-color: rgb(221, 238, 252);">
+    <h2 mat-dialog-title>{{ data ? 'Editar Producto' : 'Agregar Producto' }}</h2>
+    <mat-dialog-content>
+      <button mat-icon-button class="close-button" (click)="close()">
+        <mat-icon>close</mat-icon>
+      </button>
+      <form [formGroup]="userForm">
+        <!-- Nombre -->
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+  
+        <!-- Email -->
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="text" formControlName="email" />
+        </mat-form-field>
+  
+        <!-- Imagen URL -->
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>URL  de Imagen</mat-label>
+          <textarea matInput formControlName="image_url"></textarea>
+        </mat-form-field>
+  
+        <!-- Contraseña -->
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Contraseña (deja en blanco para no actualizar)</mat-label>
+          <input matInput type="password" formControlName="password" />
+        </mat-form-field>
+      </form>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button (click)="close()">Cancelar</button>
+      <button mat-raised-button color="primary" (click)="save()" [disabled]="userForm.invalid">Guardar</button>
+    </mat-dialog-actions>
+  </div>
+  

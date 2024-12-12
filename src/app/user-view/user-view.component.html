@@ -1,0 +1,13 @@
+<mat-dialog-content>
+<div class="titulo">
+   <h2>{{ data.name }}</h2>
+</div>
+<div class="product-view-dialog">
+    <button mat-icon-button class="close-button" (click)="close()">
+    <mat-icon>close</mat-icon>
+    </button>
+    <img *ngIf="data.image_url !== ''" [src]="data.image_url" [alt]="data.name" 
+    class="product-image" />
+    <p><strong>Email:</strong> {{ data.email }}</p>
+</div>
+</mat-dialog-content>
