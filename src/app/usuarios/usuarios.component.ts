@@ -76,6 +76,14 @@ export class UsuariosComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
 
+  usuarios(): void {
+    this.router.navigate(['/usuarios']);
+  }
+
+  productos(): void {
+    this.router.navigate(['/dashboard']);
+  }
+
   cerrarSesion(): void {
     this.usuariosService.logout().subscribe({
       next: (success) => {

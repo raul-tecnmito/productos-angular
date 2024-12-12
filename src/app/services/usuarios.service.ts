@@ -6,7 +6,7 @@ export interface Usuario {
   id: number;
   email: string;
   name: string;
-  url_foto?: string;
+  image_url?: string;
   created_at?: string;
   updated_at?: string;
 }
@@ -37,7 +37,7 @@ export class UsuariosService {
           localStorage.setItem('auth.user.id', user.id.toString());
           localStorage.setItem('auth.user.email', user.email);
           localStorage.setItem('auth.user.name', user.name);
-          if (user.url_foto) localStorage.setItem('auth.user.avatar', user.url_foto);
+          if (user.image_url) localStorage.setItem('auth.user.avatar', user.image_url);
 
           observer.next(true);
           observer.complete();

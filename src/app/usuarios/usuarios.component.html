@@ -2,6 +2,8 @@
     <img style="height: 75%; width: auto; border-radius: 50%;" 
          src="{{ avatar }}" mat-menu [matMenuTriggerFor]="menu" />
     <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="usuarios()" style="margin-bottom: 0;">Usuarios</button>
+      <button mat-menu-item (click)="productos()" style="margin-bottom: 0;">Productos</button>
       <button mat-menu-item (click)="cerrarSesion()" style="margin-bottom: 0;">Cerrar sesión</button>
     </mat-menu>
     <p style="margin-bottom: 0; margin-right: 15px;">Bienvenido {{ name }}</p>

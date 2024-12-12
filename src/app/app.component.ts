@@ -18,7 +18,7 @@ import { firstValueFrom } from 'rxjs';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Login Angular REPL';
+  title = 'Login';
   email: string = '';
   password: string = '';
   error: boolean = false;
